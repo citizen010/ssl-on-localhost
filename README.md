@@ -16,11 +16,11 @@ Make sure you're logged in as a regular user (_not as root_).
 Even you can build it from source, I suggest to download directly the [pre-built binary](https://github.com/FiloSottile/mkcert/releases) for Linux on your home directory, make it executable and move it to a path like ՝/usr/local/bin՝  while renaming it as **mkcert**
 
 ```
-wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.0/mkcert-v1.4.0-linux-amd64
+wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.0/mkcert-v1.4.1-linux-amd64
 
-chmod +x mkcert-v1.4.0-linux-amd64
+chmod +x mkcert-v1.4.1-linux-amd64
 
-sudo mv ./mkcert-v1.4.0-linux-amd64 /usr/local/bin/mkcert
+sudo mv ./mkcert-v1.4.1-linux-amd64 /usr/local/bin/mkcert
 ```
 ## Generate a local CA ##
 
