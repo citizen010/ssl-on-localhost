@@ -22,3 +22,25 @@ chmod +x mkcert-v1.4.0-linux-amd64
 
 sudo mv ./mkcert-v1.4.0-linux-amd64 /usr/local/bin/mkcert
 ```
+## Generate a local CA ##
+
+```
+mkcert -install
+Created a new local CA at "/home/YOURUSERNAME/.local/share/mkcert" 💥
+The local CA is now installed in the system trust store! ⚡️
+The local CA is now installed in the Firefox trust store (requires restart)!🦊
+```
+> Warning: the `rootCA-key.pem` file that mkcert automatically generates gives complete power to intercept secure requests from your machine. Do not share it.
+
+## Generate a certificate for localhost ##
+
+```
+mkcert localhost 127.0.0.1
+Using the local CA at "/home/YOURUSERNAME/.local/.share/mkcert" ✨
+
+Created a new certificate valid for the following names 📜
+ - "localhost"
+ - "127.0.0.1"
+
+The certificate is at "./localhost+1.pem" and the key at "./localhost+1-key.pem" ✅
+```
