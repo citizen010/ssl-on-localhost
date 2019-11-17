@@ -44,3 +44,48 @@ Created a new certificate valid for the following names 📜
 
 The certificate is at "./localhost+1.pem" and the key at "./localhost+1-key.pem" ✅
 ```
+> You should be able to generate certificates also for local domains (__eg: myapp.dev, testdomain.app, etc.__) assuming that you have a DNS on local network able to resolve those names, but this is beyond the scope of this tutorial. You can find more info on the [GitHub page](https://github.com/FiloSottile/mkcert) of the project.
+
+## Configuring nginx ##
+
+Due that mkcert does not automatically configure servers to use the certificates, let's make some nginx configuration.
+
+`sudo nano /etc/nginx/sites-enabled/default`
+
+Whit your preferred editor, edit the file above as it looks like this (__be sure to replace the values to match your setup__):
+
+```
+server {
+	listen localhost:443 ssl;
+	listen 127.0.0.1:443 ssl;
+
+	ssl_certificate        /home/YOURUSERNAME/localhost+1.pem;
+	ssl_certificate_key    /home/YOURUSERNAME/localhost+1-key.pem;
+
+	server_name localhost;
+	access_log /var/log/nginx/localhost.access.log;
+	error_log /var/log/nginx/localhost.error.log;
+	location / {
+		root   /var/www/html/;
+		index  index.html;
+	}
+}
+```
+
+## Testing nginx configuration ##
+
+```
+sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+
+## Restarting nginx ##
+
+`sudo service nginx restart`
+
+## Conclusion ##
+
+Make sure you have an `index.html` file with some content on `/var/wwww/html/` and, if all went good, you can enjoy your secure site at https://localhost.
+
+## License ##
