@@ -13,6 +13,11 @@ Using certificates from real certificate authorities (CAs) for development can b
 ## Installation ##
 
 Make sure you're logged in as a regular user (_not as root_).
+
+First install `certutil`
+
+`sudo apt install libnss3-tools`
+
 Even you can build it from source, I suggest to download directly the [pre-built binary](https://github.com/FiloSottile/mkcert/releases) for Linux on your home directory, make it executable and move it to a path like ՝/usr/local/bin՝  while renaming it as **mkcert**
 
 ```
