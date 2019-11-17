@@ -13,7 +13,7 @@ Using certificates from real certificate authorities (CAs) for development can b
 ## Installation ##
 
 Make sure you're logged in as a regular user (_not as root_).
-Even you can build it from source, I suggest to download directly the [pre-built binary](https://github.com/FiloSottile/mkcert/releases) for Linux on your home directory, make it executable and move it to a path like ՝/usr/local/bin՝  while renaming it as "mkcert"
+Even you can build it from source, I suggest to download directly the [pre-built binary](https://github.com/FiloSottile/mkcert/releases) for Linux on your home directory, make it executable and move it to a path like ՝/usr/local/bin՝  while renaming it as **mkcert**
 
 ՝՝՝
 wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.0/mkcert-v1.4.0-linux-amd64
