@@ -8,7 +8,7 @@ Using certificates from real certificate authorities (CAs) for development can b
 
 [mkcert](https://github.com/FiloSottile/mkcert) is a GitHub project maintained by Filippo Valsorda and is a simple tool for making locally-trusted development certificates. It  automatically creates and installs a local CA in the system root store and generates locally-trusted certificates.
 
-> Remember that mkcert is meant for development purposes, not production,  so it should not be used on end users machines, and that you should not export or share `rootCA-key.pem`.
+> Remember that **mkcert** is meant for development purposes, not production,  so it should not be used on end users machines, and that you should not export or share `rootCA-key.pem`.
 
 ## Installation ##
 
