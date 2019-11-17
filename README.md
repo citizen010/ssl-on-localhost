@@ -1,6 +1,6 @@
 # How to make SSL working on localhost ##
 
-## Abstract ##
+## About ##
 
 This HOW-TO has been succesfully tested on Ubuntu 19.10 LTS with nginx v. 1.16.1 so let's assume you have a similar setup.
 
