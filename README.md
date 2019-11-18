@@ -1,3 +1,5 @@
+![MIT license](https://img.shields.io/badge/license-MIT-blue)
+
 # How to make SSL working on localhost ##
 
 ## About ##
