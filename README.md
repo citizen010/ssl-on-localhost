@@ -1,4 +1,4 @@
-![SSL on localhost](https://github.com/citizen010/ssl-on-localhost/blob/master/img/ssl-on-localhost.jpg)
+![SSL on localhost](https://github.com/citizen010/ssl-on-localhost/blob/master/img/ssl.svg)
 
 ![MIT license](https://img.shields.io/badge/license-MIT-blue)
 
