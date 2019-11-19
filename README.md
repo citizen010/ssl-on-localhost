@@ -1,3 +1,5 @@
+![SSL on localhost](https://github.com/citizen010/ssl-on-localhost/blob/master/img/ssl-on-localhost.jpg)
+
 ![MIT license](https://img.shields.io/badge/license-MIT-blue)
 
 # How to make SSL working on localhost ##
